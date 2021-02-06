@@ -39,5 +39,5 @@ GyroBall
 
 | name   | link                                  |
 | ------ | ------------------------------------- |
-| Проект | https://github.com/More02/GyroBall  |
+| Проект | https://github.com/RTUITLab/GyroBall  |
 ---
