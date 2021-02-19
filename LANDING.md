@@ -12,7 +12,6 @@ GyroBall
 # Images
 * ![](landing/1.png)
 * ![](landing/2.png)
-* ![](landing/4.png)
 * ![](landing/3.png)
 
 ---
