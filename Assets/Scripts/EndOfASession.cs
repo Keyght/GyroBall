@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EndOfASession : MonoBehaviour
 {
+    public GameObject FinishCanvas;
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name.Contains("Floor")) {
+            FinishCanvas.SetActive(true);
             StartCoroutine(OpenInterfaceScreen(3));
             Debug.Log("Hit");
         }
