@@ -27,6 +27,7 @@ public class OpenAnotherUI : MonoBehaviour
     }
     public void whattodoground()
     {
+        Debug.Log("Klicked ground");
         ImageFirstRowBack.GetComponent<Image>().color = new Color(96, 88, 86);
         HeaderNow.SetActive(false);
         FunctionsNow.SetActive(false);
@@ -45,6 +46,10 @@ public class OpenAnotherUI : MonoBehaviour
     public void whattodowind()
     {
         ImageFirstRowBack.color = new Color(160, 236, 252);
+    }
+    void OnMouseDown()
+    {
+        Debug.Log("clicked");
     }
     //void OnMouseDown()
     //{
