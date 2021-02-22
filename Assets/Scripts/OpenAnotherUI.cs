@@ -23,6 +23,8 @@ public class OpenAnotherUI : MonoBehaviour
     public Image ImageFirstRowBack;
     public Image ImageNature;
 
+    public GameObject WaterCastle;
+
     public Button play;
 
     public string scene_name;
@@ -45,9 +47,12 @@ public class OpenAnotherUI : MonoBehaviour
 
     void Start()
     {
+        ButtonWater.interactable = false;
         if (PlayerPrefs.HasKey("Ground"))
         {
             Debug.Log("Water available");
+            WaterCastle.SetActive(false);
+            ButtonWater.interactable = true;
         }
     }
     void Update()
