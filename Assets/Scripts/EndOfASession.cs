@@ -33,31 +33,38 @@ public class EndOfASession : MonoBehaviour
             NextSphere.transform.position = NowSphere.transform.position;
             now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
             FinishCanvasGood.SetActive(true);
-            //NextSphere.SetActive(true);
-            //NowSphere.SetActive(false);
             NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
-        //if (NextSphere.active==true)
-        //{
-        //    StartCoroutine(OpenInterfaceScreen(3));
-        //}
+
         if (collision.gameObject.name == "CylinderWater")
         {
             Debug.Log("Second level over");
             PlayerPrefs.SetString("Water", "Water");
+            NextSphere.transform.position = NowSphere.transform.position;
+            now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+            FinishCanvasGood.SetActive(true);
+            NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
         if (collision.gameObject.name == "CylinderFire")
         {
             Debug.Log("Third level over");
             PlayerPrefs.SetString("Fire", "Fire");
+            NextSphere.transform.position = NowSphere.transform.position;
+            now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+            FinishCanvasGood.SetActive(true);
+            NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
         if (collision.gameObject.name == "CylinderWind")
         {
             Debug.Log("Last level over");
             PlayerPrefs.SetString("Wind", "Wind");
+            NextSphere.transform.position = NowSphere.transform.position;
+            now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+            FinishCanvasGood.SetActive(true);
+            NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
     }

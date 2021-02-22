@@ -40,6 +40,7 @@ public class OpenAnotherUI : MonoBehaviour
 
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
         ButtonWater.interactable = false;
         ButtonFire.interactable = false;
         ButtonWind.interactable = false;
