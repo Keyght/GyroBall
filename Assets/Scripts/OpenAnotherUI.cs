@@ -13,6 +13,7 @@ public class OpenAnotherUI : MonoBehaviour
     public GameObject FunctionsNow;
     public GameObject FunctionsNext;
 
+    public GameObject canvas_ui;
 
     public Button ButtonGround;
     public Button ButtonWater;
@@ -26,13 +27,37 @@ public class OpenAnotherUI : MonoBehaviour
 
     public string scene_name;
     public Text scene_name_text;
-    
+
+    public bool GroundLevelOverUI = false;
+    public bool WaterLevelOverUI = false;
+    public bool FireLevelOverUI = false;
+    public bool WindLevelOverUI = false;
+
+    public bool GroundLevelOverFinal = false;
+    public bool WaterLevelOverFinal = false;
+    public bool FireLevelOverFinal = false;
+    public bool WindLevelOverFinal = false;
+
+    public void Awake()
+    {
+       // DontDestroyOnLoad(canvas_ui);
+    }
 
     void Start()
     {
-        
+        if (PlayerPrefs.HasKey("Ground"))
+        {
+            Debug.Log("Water available");
+        }
     }
-   
+    void Update()
+    {
+        if (GroundLevelOverUI==true)
+        {
+            GroundLevelOverFinal = true;
+        }
+    }
+
     public void OnMouseDown()
     {
         if (gameObject.name=="ButtonGround")
@@ -74,7 +99,7 @@ public class OpenAnotherUI : MonoBehaviour
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
-            scene_name = "StoneLoc";
+            scene_name = "SampleScene";
             scene_name_text.text = scene_name;
         }
         if (gameObject.name == "ButtonFire")

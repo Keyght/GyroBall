@@ -338,6 +338,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -347,6 +348,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!65 &289418595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -511,6 +516,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -520,6 +526,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!114 &507226053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,6 +778,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -777,6 +788,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!1 &1256883217
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,6 +911,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -905,6 +921,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!1 &1325959835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1971852888760598697, guid: 4d10bed4b2c085140b0e8f87b26cb779,
@@ -927,6 +947,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -936,6 +957,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!65 &1325959838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -983,6 +1008,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -992,6 +1018,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!1 &1570264531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1079,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -1058,6 +1089,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!114 &1570264534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1228,6 +1263,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -1237,6 +1273,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!65 &1605372140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1355,6 +1395,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608871664}
   m_CullTransparentMesh: 0
+--- !u!1 &1749058023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1971902469166386585, guid: 4d10bed4b2c085140b0e8f87b26cb779,
+    type: 3}
+  m_PrefabInstance: {fileID: 6243176402161017362}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1749058024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749058023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60f8b70c494b8b44b9a06aeaeca76c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeaderNow: {fileID: 1298782256}
+  HeaderNext: {fileID: 2089151815}
+  FunctionsNow: {fileID: 1340838193}
+  FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
+  ButtonGround: {fileID: 289418596}
+  ButtonWater: {fileID: 1325959842}
+  ButtonFire: {fileID: 2008504225}
+  ButtonWind: {fileID: 1605372137}
+  ImageFirstRowBack: {fileID: 1997068818}
+  ImageNature: {fileID: 507226055}
+  play: {fileID: 2119912386}
+  scene_name: 
+  scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!1 &1868961707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,6 +1604,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -1537,6 +1614,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!114 &1997068820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1599,6 +1680,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -1608,6 +1690,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!65 &2008504228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1655,6 +1741,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -1664,6 +1751,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!114 &2089151817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1903,6 +1994,7 @@ MonoBehaviour:
   HeaderNext: {fileID: 2089151815}
   FunctionsNow: {fileID: 1340838193}
   FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
   ButtonGround: {fileID: 289418596}
   ButtonWater: {fileID: 1325959842}
   ButtonFire: {fileID: 2008504225}
@@ -1912,6 +2004,10 @@ MonoBehaviour:
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
+  GroundLevelOver: 0
+  WaterLevelOver: 0
+  FireLevelOver: 0
+  WindLevelOver: 0
 --- !u!114 &2119912388
 MonoBehaviour:
   m_ObjectHideFlags: 0
