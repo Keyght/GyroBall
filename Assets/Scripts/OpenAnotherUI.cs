@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -22,52 +23,17 @@ public class OpenAnotherUI : MonoBehaviour
 
     public Button play;
 
-    public Color wind_color;
     public string scene_name;
-    // Start is called before the first frame update
+    public Text scene_name_text;
+    
+
     void Start()
     {
-        ButtonGround.onClick.AddListener(whattodoground);
-        ButtonWater.onClick.AddListener(whattodowater);
-        ButtonFire.onClick.AddListener(whattodofire);
-        ButtonWind.onClick.AddListener(whattodowind);
-        play.onClick.AddListener(whattodoplay);
-        scene_name = "scene";
-
-        wind_color = new Color(0.627451f, 0.9254903f, 0.9882354f, 1f);
+        
     }
-    public void whattodoground()
-    {
-        Debug.Log("Klicked ground");
-        ImageFirstRowBack.GetComponent<Image>().color = new Color(96, 88, 86);
-        HeaderNow.SetActive(false);
-        FunctionsNow.SetActive(false);
-
-        HeaderNext.SetActive(true);
-        FunctionsNext.SetActive(true);
-
-        scene_name = "StoneLoc";
-    }
-    public void whattodoplay()
-    {
-        SceneManager.LoadScene(scene_name);
-    }
-    public void whattodowater()
-    {
-        ImageFirstRowBack.color = new Color(0, 182, 222);
-    }
-    public void whattodofire()
-    {
-        ImageFirstRowBack.color = new Color(238, 128, 101);
-    }
-    public void whattodowind()
-    {
-        ImageFirstRowBack.color = new Color(160, 236, 252);
-    }
-
+   
     public void OnMouseDown()
     {
-        
         if (gameObject.name=="ButtonGround")
         {
             Debug.Log("Klicked ground");
@@ -80,7 +46,9 @@ public class OpenAnotherUI : MonoBehaviour
             FunctionsNext.SetActive(true);
 
             scene_name = "StoneLoc";
-            
+            scene_name_text.text = scene_name;
+            Debug.Log("UITEkst"+ scene_name_text.text);
+
         }
         if (gameObject.name == "ButtonWind")
         {
@@ -92,6 +60,8 @@ public class OpenAnotherUI : MonoBehaviour
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
+            scene_name = "StoneLoc";
+            scene_name_text.text = scene_name;
         }
         if (gameObject.name == "ButtonWater")
         {
@@ -103,6 +73,8 @@ public class OpenAnotherUI : MonoBehaviour
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
+            scene_name = "StoneLoc";
+            scene_name_text.text = scene_name;
         }
         if (gameObject.name == "ButtonFire")
         {
@@ -114,29 +86,15 @@ public class OpenAnotherUI : MonoBehaviour
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
+            scene_name = "StoneLoc";
+            scene_name_text.text = scene_name;
+        }
+        if (gameObject.name == "ButtonPlay")
+        {
+            SceneManager.LoadScene(scene_name_text.text);
+            Debug.Log("But2" + scene_name);
         }
         Debug.Log("clicked");
     }
-    //public void check (string scene_name)
-    //{
 
-    //}
-    //void OnMouseDown()
-    //{
-    //    HeaderNow.SetActive(false);
-    //    FunctionsNow.SetActive(false);
-
-    //    HeaderNext.SetActive(true);
-    //    FunctionsNext.SetActive(true);
-    //}
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void OpenScene(string scene_name)
-    {
-        SceneManager.LoadScene(scene_name);
-    }
 }
