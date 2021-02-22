@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class EndOfASession : MonoBehaviour
 {
     public GameObject FinishCanvas;
-    public bool GroundLevelOver = false;
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name.Contains("Floor")) {
@@ -19,7 +18,18 @@ public class EndOfASession : MonoBehaviour
         {
             Debug.Log("First level over");
             PlayerPrefs.SetString("Ground", "Ground");
-            GroundLevelOver = true;
+            StartCoroutine(OpenInterfaceScreen(3));
+        }
+        if (collision.gameObject.name == "CylinderWater")
+        {
+            Debug.Log("Second level over");
+            PlayerPrefs.SetString("Water", "Water");
+            StartCoroutine(OpenInterfaceScreen(3));
+        }
+        if (collision.gameObject.name == "CylinderFire")
+        {
+            Debug.Log("First level over");
+            PlayerPrefs.SetString("Fire", "Fire");
             StartCoroutine(OpenInterfaceScreen(3));
         }
     }

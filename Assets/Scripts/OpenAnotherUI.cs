@@ -24,21 +24,14 @@ public class OpenAnotherUI : MonoBehaviour
     public Image ImageNature;
 
     public GameObject WaterCastle;
+    public GameObject FireCastle;
+    public GameObject WindCastle;
 
     public Button play;
 
     public string scene_name;
     public Text scene_name_text;
 
-    public bool GroundLevelOverUI = false;
-    public bool WaterLevelOverUI = false;
-    public bool FireLevelOverUI = false;
-    public bool WindLevelOverUI = false;
-
-    public bool GroundLevelOverFinal = false;
-    public bool WaterLevelOverFinal = false;
-    public bool FireLevelOverFinal = false;
-    public bool WindLevelOverFinal = false;
 
     public void Awake()
     {
@@ -48,19 +41,30 @@ public class OpenAnotherUI : MonoBehaviour
     void Start()
     {
         ButtonWater.interactable = false;
+        ButtonFire.interactable = false;
+        ButtonWind.interactable = false;
         if (PlayerPrefs.HasKey("Ground"))
         {
             Debug.Log("Water available");
             WaterCastle.SetActive(false);
             ButtonWater.interactable = true;
         }
+        if (PlayerPrefs.HasKey("Water"))
+        {
+            Debug.Log("Fire available");
+            WaterCastle.SetActive(false);
+            ButtonFire.interactable = true;
+        }
+        if (PlayerPrefs.HasKey("Fire"))
+        {
+            Debug.Log("Wind available");
+            WaterCastle.SetActive(false);
+            ButtonWind.interactable = true;
+        }
     }
     void Update()
     {
-        if (GroundLevelOverUI==true)
-        {
-            GroundLevelOverFinal = true;
-        }
+       
     }
 
     public void OnMouseDown()

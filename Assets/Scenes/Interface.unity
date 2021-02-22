@@ -218,6 +218,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16835636}
   m_CullTransparentMesh: 0
+--- !u!1 &181212504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181212505}
+  - component: {fileID: 181212507}
+  - component: {fileID: 181212506}
+  m_Layer: 5
+  m_Name: FireCastle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &181212505
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181212504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 537672016}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &181212506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181212504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 83ba24f238850d34fad609e86f60e0c7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &181212507
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181212504}
+  m_CullTransparentMesh: 0
+--- !u!224 &191936787 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1749533175370862099, guid: 4d10bed4b2c085140b0e8f87b26cb779,
+    type: 3}
+  m_PrefabInstance: {fileID: 6243176402161017362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &235004890
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,13 +424,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!65 &289418595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -523,13 +601,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!114 &507226053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -601,6 +678,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507226050}
   m_CullTransparentMesh: 0
+--- !u!224 &537672016 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1749435590860549839, guid: 4d10bed4b2c085140b0e8f87b26cb779,
+    type: 3}
+  m_PrefabInstance: {fileID: 6243176402161017362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &796640408
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,13 +868,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!1 &1256883217
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,13 +1000,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!1 &1325959835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1971852888760598697, guid: 4d10bed4b2c085140b0e8f87b26cb779,
@@ -954,13 +1035,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!65 &1325959838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1015,13 +1095,85 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
+--- !u!1 &1350722187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1350722188}
+  - component: {fileID: 1350722190}
+  - component: {fileID: 1350722189}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1350722188
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350722187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 191936787}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1350722189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350722187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 83ba24f238850d34fad609e86f60e0c7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1350722190
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350722187}
+  m_CullTransparentMesh: 0
 --- !u!1 &1570264531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,13 +1238,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!114 &1570264534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,13 +1421,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!65 &1605372140
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1395,6 +1545,115 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1608871664}
   m_CullTransparentMesh: 0
+--- !u!224 &1620693872 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1748760878034520297, guid: 4d10bed4b2c085140b0e8f87b26cb779,
+    type: 3}
+  m_PrefabInstance: {fileID: 6243176402161017362}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1645686478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1645686479}
+  - component: {fileID: 1645686481}
+  - component: {fileID: 1645686480}
+  - component: {fileID: 1645686482}
+  m_Layer: 5
+  m_Name: WaterCastle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1645686479
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645686478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1620693872}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1645686480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645686478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 83ba24f238850d34fad609e86f60e0c7, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1645686481
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645686478}
+  m_CullTransparentMesh: 0
+--- !u!114 &1645686482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645686478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60f8b70c494b8b44b9a06aeaeca76c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeaderNow: {fileID: 1298782256}
+  HeaderNext: {fileID: 2089151815}
+  FunctionsNow: {fileID: 1340838193}
+  FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
+  ButtonGround: {fileID: 289418596}
+  ButtonWater: {fileID: 1325959842}
+  ButtonFire: {fileID: 2008504225}
+  ButtonWind: {fileID: 1605372137}
+  ImageFirstRowBack: {fileID: 1997068818}
+  ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
+  play: {fileID: 2119912386}
+  scene_name: 
+  scene_name_text: {fileID: 834457565}
 --- !u!1 &1749058023 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1971902469166386585, guid: 4d10bed4b2c085140b0e8f87b26cb779,
@@ -1424,13 +1683,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 0}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!1 &1868961707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,13 +1869,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!114 &1997068820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,13 +1944,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!65 &2008504228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1748,13 +2004,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!114 &2089151817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2001,13 +2256,12 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 0}
+  WindCastle: {fileID: 0}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
-  GroundLevelOver: 0
-  WaterLevelOver: 0
-  FireLevelOver: 0
-  WindLevelOver: 0
 --- !u!114 &2119912388
 MonoBehaviour:
   m_ObjectHideFlags: 0
