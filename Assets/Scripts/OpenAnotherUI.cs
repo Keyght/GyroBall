@@ -22,6 +22,7 @@ public class OpenAnotherUI : MonoBehaviour
 
     public Button play;
 
+    public Color wind_color;
     public string scene_name;
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,8 @@ public class OpenAnotherUI : MonoBehaviour
         ButtonWind.onClick.AddListener(whattodowind);
         play.onClick.AddListener(whattodoplay);
         scene_name = "scene";
+
+        wind_color = new Color(0.627451f, 0.9254903f, 0.9882354f, 1f);
     }
     public void whattodoground()
     {
@@ -68,20 +71,22 @@ public class OpenAnotherUI : MonoBehaviour
         if (gameObject.name=="ButtonGround")
         {
             Debug.Log("Klicked ground");
-            ImageFirstRowBack.GetComponent<Image>().color = new Color(96, 88, 86, 255);
-            ImageNature.GetComponent<Image>().sprite = Resources.Load<Sprite>("Assets/Textures/four-element5") as Sprite;
+            ImageFirstRowBack.GetComponent<Image>().color = new Color(0.3764706f, 0.345098f, 0.3372549f, 1f);
+            ImageNature.GetComponent<Image>().sprite = Resources.Load<Sprite>("four-element5") as Sprite;
             HeaderNow.SetActive(false);
             FunctionsNow.SetActive(false);
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
+
             scene_name = "StoneLoc";
+            
         }
         if (gameObject.name == "ButtonWind")
         {
             Debug.Log("Klicked wind");
-            ImageFirstRowBack.GetComponent<Image>().color = new Color(160, 236, 252, 255);
-            ImageNature.GetComponent<Image>().sprite = Resources.Load<Sprite>("four-element4");
+            ImageFirstRowBack.GetComponent<Image>().color = new Color(0.627451f, 0.9254903f, 0.9882354f, 1f);
+            ImageNature.GetComponent<Image>().sprite = Resources.Load<Sprite>("four-element4") as Sprite;
             HeaderNow.SetActive(false);
             FunctionsNow.SetActive(false);
 
@@ -91,8 +96,8 @@ public class OpenAnotherUI : MonoBehaviour
         if (gameObject.name == "ButtonWater")
         {
             Debug.Log("Klicked water");
-            ImageFirstRowBack.GetComponent<Image>().color = new Color(0, 182, 222, 255);
-            ImageNature.GetComponent<Image>().sprite = Resources.Load<Sprite>("four-element3");
+            ImageFirstRowBack.GetComponent<Image>().color = new Color(0f, 0.7137255f, 0.8705882f, 1f);
+            ImageNature.GetComponent<Image>().sprite = Resources.Load<Sprite>("four-element3") as Sprite;
             HeaderNow.SetActive(false);
             FunctionsNow.SetActive(false);
 
@@ -102,18 +107,13 @@ public class OpenAnotherUI : MonoBehaviour
         if (gameObject.name == "ButtonFire")
         {
             Debug.Log("Klicked fire");
-            ImageFirstRowBack.GetComponent<Image>().color = new Color(238, 128, 101, 255);
-            ImageNature.GetComponent<Image>().sprite = Resources.Load<Sprite>("four-element2");
+            ImageFirstRowBack.GetComponent<Image>().color = new Color(0.9333334f, 0.5019608f, 0.3960785f, 1f);
+            ImageNature.GetComponent<Image>().sprite = Resources.Load<Sprite>("four-element2") as Sprite;
             HeaderNow.SetActive(false);
             FunctionsNow.SetActive(false);
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
-        }
-        if (gameObject.name == "ButtonPlay")
-        {
-            Debug.Log("Klicked play");
-            SceneManager.LoadScene(scene_name);
         }
         Debug.Log("clicked");
     }
@@ -134,5 +134,9 @@ public class OpenAnotherUI : MonoBehaviour
     void Update()
     {
         
+    }
+    public void OpenScene(string scene_name)
+    {
+        SceneManager.LoadScene(scene_name);
     }
 }
