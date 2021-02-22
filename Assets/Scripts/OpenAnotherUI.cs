@@ -13,6 +13,7 @@ public class OpenAnotherUI : MonoBehaviour
     public GameObject FunctionsNow;
     public GameObject FunctionsNext;
 
+
     public Button ButtonGround;
     public Button ButtonWater;
     public Button ButtonFire;

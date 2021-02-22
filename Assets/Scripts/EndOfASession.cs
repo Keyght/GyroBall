@@ -13,6 +13,10 @@ public class EndOfASession : MonoBehaviour
             StartCoroutine(OpenInterfaceScreen(3));
             Debug.Log("Hit");
         }
+        if (collision.gameObject.name== "Cylinder12")
+        {
+            Debug.Log("First level over");
+        }
     }
     IEnumerator OpenInterfaceScreen(float time)
     {

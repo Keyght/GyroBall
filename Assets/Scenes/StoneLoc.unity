@@ -10769,16 +10769,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trace
       objectReference: {fileID: 0}
-    - target: {fileID: -8277064854309609534, guid: fc98dbab7db6b0b4d8922e66445a5a5e,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a9bb3e54b87bd6d43b5ba338d7109642, type: 2}
     - target: {fileID: -7985890916337362228, guid: fc98dbab7db6b0b4d8922e66445a5a5e,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6646398204452391589, guid: fc98dbab7db6b0b4d8922e66445a5a5e,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -8277064854309609534, guid: fc98dbab7db6b0b4d8922e66445a5a5e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a9bb3e54b87bd6d43b5ba338d7109642, type: 2}
     - target: {fileID: -4216859302048453862, guid: fc98dbab7db6b0b4d8922e66445a5a5e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10914,11 +10919,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a9bb3e54b87bd6d43b5ba338d7109642, type: 2}
-    - target: {fileID: 6646398204452391589, guid: fc98dbab7db6b0b4d8922e66445a5a5e,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 6993051982550269841, guid: fc98dbab7db6b0b4d8922e66445a5a5e,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11658,8 +11658,9 @@ GameObject:
   - component: {fileID: 1062424422}
   - component: {fileID: 1062424424}
   - component: {fileID: 1062424423}
+  - component: {fileID: 1062424425}
   m_Layer: 0
-  m_Name: Cylinder (12)
+  m_Name: Cylinder12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11725,6 +11726,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062424421}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!136 &1062424425
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062424421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5000001
+  m_Height: 2.0586958
+  m_Direction: 1
+  m_Center: {x: 0.0000009934108, y: 0.029348165, z: -0.00000007947286}
 --- !u!1 &1063343824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: eb78b2299a27a13458de8c0b1957d9f4,
