@@ -6,20 +6,42 @@ using UnityEngine.SceneManagement;
 public class EndOfASession : MonoBehaviour
 {
     public GameObject FinishCanvas;
+    public GameObject FinishCanvasGood;
+
+    public GameObject NowSphere;
+    public GameObject NextSphere;
+
+    Rigidbody now_Rigidbody;
+    Rigidbody next_Rigidbody;
+    void Start()
+    {
+        now_Rigidbody = NowSphere.GetComponent<Rigidbody>();
+        next_Rigidbody = NextSphere.GetComponent<Rigidbody>();
+        next_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+    }
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name.Contains("Floor")) {
             FinishCanvas.SetActive(true);
             StartCoroutine(OpenInterfaceScreen(3));
             Debug.Log("Hit");
-
         }
         if (collision.gameObject.name== "Cylinder12")
         {
             Debug.Log("First level over");
             PlayerPrefs.SetString("Ground", "Ground");
+            NextSphere.transform.position = NowSphere.transform.position;
+            now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+            FinishCanvasGood.SetActive(true);
+            //NextSphere.SetActive(true);
+            //NowSphere.SetActive(false);
+            NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
+        //if (NextSphere.active==true)
+        //{
+        //    StartCoroutine(OpenInterfaceScreen(3));
+        //}
         if (collision.gameObject.name == "CylinderWater")
         {
             Debug.Log("Second level over");
