@@ -28,8 +28,14 @@ public class EndOfASession : MonoBehaviour
         }
         if (collision.gameObject.name == "CylinderFire")
         {
-            Debug.Log("First level over");
+            Debug.Log("Third level over");
             PlayerPrefs.SetString("Fire", "Fire");
+            StartCoroutine(OpenInterfaceScreen(3));
+        }
+        if (collision.gameObject.name == "CylinderWind")
+        {
+            Debug.Log("Last level over");
+            PlayerPrefs.SetString("Wind", "Wind");
             StartCoroutine(OpenInterfaceScreen(3));
         }
     }

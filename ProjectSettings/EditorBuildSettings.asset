@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StoneLoc.unity
     guid: 1167c29f21e273c42ae8181ae805274a
+  - enabled: 1
+    path: Assets/Scenes/FireLoc.unity
+    guid: 4709eee784954b04d89805de50132c44
+  - enabled: 1
+    path: Assets/Scenes/WaterLoc.unity
+    guid: 260337b458fc77d4eada4f9620e0b131
+  - enabled: 1
+    path: Assets/Scenes/WindLoc.unity
+    guid: b0696ae8ca50f154f8826cbddc933430
   m_configObjects: {}

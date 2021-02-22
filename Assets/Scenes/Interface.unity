@@ -229,6 +229,7 @@ GameObject:
   - component: {fileID: 181212505}
   - component: {fileID: 181212507}
   - component: {fileID: 181212506}
+  - component: {fileID: 181212508}
   m_Layer: 5
   m_Name: FireCastle
   m_TagString: Untagged
@@ -291,6 +292,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181212504}
   m_CullTransparentMesh: 0
+--- !u!114 &181212508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181212504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60f8b70c494b8b44b9a06aeaeca76c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeaderNow: {fileID: 1298782256}
+  HeaderNext: {fileID: 2089151815}
+  FunctionsNow: {fileID: 1340838193}
+  FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
+  ButtonGround: {fileID: 289418596}
+  ButtonWater: {fileID: 1325959842}
+  ButtonFire: {fileID: 2008504225}
+  ButtonWind: {fileID: 1605372137}
+  ImageFirstRowBack: {fileID: 1997068818}
+  ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
+  play: {fileID: 2119912386}
+  scene_name: 
+  scene_name_text: {fileID: 834457565}
 --- !u!224 &191936787 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1749533175370862099, guid: 4d10bed4b2c085140b0e8f87b26cb779,
@@ -425,8 +455,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -602,8 +632,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -869,8 +899,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1001,8 +1031,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1036,8 +1066,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1096,8 +1126,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1112,8 +1142,9 @@ GameObject:
   - component: {fileID: 1350722188}
   - component: {fileID: 1350722190}
   - component: {fileID: 1350722189}
+  - component: {fileID: 1350722191}
   m_Layer: 5
-  m_Name: Image
+  m_Name: WindCastle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1174,6 +1205,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350722187}
   m_CullTransparentMesh: 0
+--- !u!114 &1350722191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350722187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a60f8b70c494b8b44b9a06aeaeca76c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeaderNow: {fileID: 1298782256}
+  HeaderNext: {fileID: 2089151815}
+  FunctionsNow: {fileID: 1340838193}
+  FunctionsNext: {fileID: 1570264531}
+  canvas_ui: {fileID: 1749058023}
+  ButtonGround: {fileID: 289418596}
+  ButtonWater: {fileID: 1325959842}
+  ButtonFire: {fileID: 2008504225}
+  ButtonWind: {fileID: 1605372137}
+  ImageFirstRowBack: {fileID: 1997068818}
+  ImageNature: {fileID: 507226055}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
+  play: {fileID: 2119912386}
+  scene_name: 
+  scene_name_text: {fileID: 834457565}
 --- !u!1 &1570264531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1239,8 +1299,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1422,8 +1482,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1649,8 +1709,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1683,9 +1743,9 @@ MonoBehaviour:
   ButtonWind: {fileID: 1605372137}
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
-  WaterCastle: {fileID: 0}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  WaterCastle: {fileID: 1645686478}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1870,8 +1930,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -1945,8 +2005,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -2005,8 +2065,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}
@@ -2257,8 +2317,8 @@ MonoBehaviour:
   ImageFirstRowBack: {fileID: 1997068818}
   ImageNature: {fileID: 507226055}
   WaterCastle: {fileID: 1645686478}
-  FireCastle: {fileID: 0}
-  WindCastle: {fileID: 0}
+  FireCastle: {fileID: 181212504}
+  WindCastle: {fileID: 1350722187}
   play: {fileID: 2119912386}
   scene_name: 
   scene_name_text: {fileID: 834457565}

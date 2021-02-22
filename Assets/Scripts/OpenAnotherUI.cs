@@ -52,13 +52,13 @@ public class OpenAnotherUI : MonoBehaviour
         if (PlayerPrefs.HasKey("Water"))
         {
             Debug.Log("Fire available");
-            WaterCastle.SetActive(false);
+            FireCastle.SetActive(false);
             ButtonFire.interactable = true;
         }
         if (PlayerPrefs.HasKey("Fire"))
         {
             Debug.Log("Wind available");
-            WaterCastle.SetActive(false);
+            WindCastle.SetActive(false);
             ButtonWind.interactable = true;
         }
     }
@@ -95,7 +95,7 @@ public class OpenAnotherUI : MonoBehaviour
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
-            scene_name = "StoneLoc";
+            scene_name = "WindLoc";
             scene_name_text.text = scene_name;
         }
         if (gameObject.name == "ButtonWater")
@@ -108,7 +108,7 @@ public class OpenAnotherUI : MonoBehaviour
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
-            scene_name = "SampleScene";
+            scene_name = "WaterLoc";
             scene_name_text.text = scene_name;
         }
         if (gameObject.name == "ButtonFire")
@@ -121,7 +121,7 @@ public class OpenAnotherUI : MonoBehaviour
 
             HeaderNext.SetActive(true);
             FunctionsNext.SetActive(true);
-            scene_name = "StoneLoc";
+            scene_name = "FireLoc";
             scene_name_text.text = scene_name;
         }
         if (gameObject.name == "ButtonPlay")
