@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Day GLES30
   m_Shader: {fileID: 4800000, guid: 5b9c060b1b8923b47b24b5f6137385b5, type: 3}
   m_ShaderKeywords: _2NDENABLED_ON _CUBEMAPUSECUSTOMCUBEMAP_ON _SECONDARYENABLETHIS_ON
@@ -207,7 +208,7 @@ Material:
     m_Colors:
     - _1stUandVspeedZandWnoaffects: {r: 0.004, g: 0.00452, b: 0, a: 0}
     - _2ndUandVspeedZandWnoaffects: {r: -0.0015, g: -0.00225, b: 0, a: 0}
-    - _BaseColor: {r: 0.31163496, g: 0.7475333, b: 0.9632353, a: 0.522}
+    - _BaseColor: {r: 0.07338022, g: 0.637883, b: 0.9150943, a: 0.522}
     - _BlendColor: {r: 0, g: 0.466, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _CubemapBaseColor: {r: 1, g: 1, b: 1, a: 1}
