@@ -496,6 +496,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TraceAir
       objectReference: {fileID: 0}
+    - target: {fileID: -6396975871598004527, guid: a37e37325dd25c74681f9910cf32f507,
+        type: 3}
+      propertyPath: m_Name
+      value: FloorClouds
+      objectReference: {fileID: 0}
     - target: {fileID: -8680146645727374733, guid: a37e37325dd25c74681f9910cf32f507,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
