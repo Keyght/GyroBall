@@ -1455,6 +1455,8 @@ GameObject:
   - component: {fileID: 1256883219}
   - component: {fileID: 1256883218}
   - component: {fileID: 1256883222}
+  - component: {fileID: 1256883221}
+  - component: {fileID: 1256883223}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1527,6 +1529,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1256883221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256883217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de686f3d6b20a594ab4f430b7027c4ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head: {fileID: 1256883217}
 --- !u!114 &1256883222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,6 +1555,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touchRotAdjust: 1
+--- !u!65 &1256883223
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256883217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1298782256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1971032944469491911, guid: 4d10bed4b2c085140b0e8f87b26cb779,
