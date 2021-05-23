@@ -10,6 +10,7 @@ public class EndOfASession : MonoBehaviour
 
     public GameObject NowSphere;
     public GameObject NextSphere;
+    public GameObject EmptySphere;
 
     Rigidbody now_Rigidbody;
     Rigidbody next_Rigidbody;
@@ -64,7 +65,9 @@ public class EndOfASession : MonoBehaviour
             NextSphere.transform.position = NowSphere.transform.position;
             now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
             FinishCanvasGood.SetActive(true);
-            NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
+            NextSphere.SetActive(true);
+            //NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
+            NowSphere.GetComponent<MeshRenderer>().material = EmptySphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
     }
