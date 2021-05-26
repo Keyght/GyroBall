@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ForFireLoc : MonoBehaviour
 {
+    public GameObject FinishCanvas;
+
     public GameObject Fire1;
     public GameObject Fire2;
     public GameObject Fire3;
@@ -40,6 +43,21 @@ public class ForFireLoc : MonoBehaviour
             StartCoroutine(DestroyFourthdPrep(3));
             Debug.Log("Paper");
         }
+        if (collision.gameObject.name.Contains("Water"))
+        {
+            FinishCanvas.SetActive(true);
+            StartCoroutine(OpenInterfaceScreen(3));
+            Debug.Log("Hit water");
+            MeshCollider[] colliders = FindObjectsOfType<MeshCollider>();
+            int len = colliders.Length;
+            for (int i = 0; i < len; i++) {
+                if (colliders[i].name.Contains("Water"))
+                {
+                    GameObject.Destroy(colliders[i]);
+                }    
+            }
+            
+        }
     }
     IEnumerator DestroyFirstPrep(float time)
     {
@@ -64,5 +82,10 @@ public class ForFireLoc : MonoBehaviour
         yield return new WaitForSeconds(time);
         Destroy(Prep4);
         Destroy(Fire4);
+    }
+    IEnumerator OpenInterfaceScreen(float time)
+    {
+        yield return new WaitForSeconds(time);
+        SceneManager.LoadScene("Interface");
     }
 }
