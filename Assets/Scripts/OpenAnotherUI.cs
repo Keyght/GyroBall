@@ -41,6 +41,10 @@ public class OpenAnotherUI : MonoBehaviour
     void Start()
     {
         //PlayerPrefs.DeleteAll();
+        //PlayerPrefs.SetString("Ground", "Ground");
+        //PlayerPrefs.SetString("Water", "Water");
+        //PlayerPrefs.SetString("Fire", "Fire");
+        //PlayerPrefs.SetString("Wind", "Wind");
         ButtonWater.interactable = false;
         ButtonFire.interactable = false;
         ButtonWind.interactable = false;
