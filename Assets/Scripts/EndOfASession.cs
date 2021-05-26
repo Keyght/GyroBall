@@ -51,8 +51,9 @@ public class EndOfASession : MonoBehaviour
             NextSphere.transform.position = NowSphere.transform.position;
             now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
             isGameFinished = true;
-            TimerText.text = FormatTime(timerValue);
             FinishCanvasGood.SetActive(true);
+            TimerText = GameObject.Find("TimerText").GetComponent<Text>();
+            TimerText.text = FormatTime(timerValue);
             NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
@@ -64,8 +65,9 @@ public class EndOfASession : MonoBehaviour
             NextSphere.transform.position = NowSphere.transform.position;
             now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
             isGameFinished = true;
-            TimerText.text = FormatTime(timerValue);
             FinishCanvasGood.SetActive(true);
+            TimerText = GameObject.Find("TimerText").GetComponent<Text>();
+            TimerText.text = FormatTime(timerValue);
             NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
@@ -76,8 +78,9 @@ public class EndOfASession : MonoBehaviour
             NextSphere.transform.position = NowSphere.transform.position;
             now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
             isGameFinished = true;
-            TimerText.text = FormatTime(timerValue);
             FinishCanvasGood.SetActive(true);
+            TimerText = GameObject.Find("TimerText").GetComponent<Text>();
+            TimerText.text = FormatTime(timerValue);
             NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
@@ -88,8 +91,9 @@ public class EndOfASession : MonoBehaviour
             NextSphere.transform.position = NowSphere.transform.position;
             now_Rigidbody.constraints = RigidbodyConstraints.FreezePosition;
             isGameFinished = true;
-            TimerText.text = FormatTime(timerValue);
             FinishCanvasGood.SetActive(true);
+            TimerText = GameObject.Find("TimerText").GetComponent<Text>();
+            TimerText.text = FormatTime(timerValue);
             NextSphere.SetActive(true);
             //NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             NowSphere.GetComponent<MeshRenderer>().material = EmptySphere.GetComponent<MeshRenderer>().material;
