@@ -7,6 +7,9 @@ public class ForFireLoc : MonoBehaviour
 {
     public GameObject FinishCanvas;
 
+    public GameObject NowSphere;
+    public GameObject WaterSphere;
+
     public GameObject Fire1;
     public GameObject Fire2;
     public GameObject Fire3;
@@ -46,17 +49,20 @@ public class ForFireLoc : MonoBehaviour
         if (collision.gameObject.name.Contains("Water"))
         {
             FinishCanvas.SetActive(true);
-            StartCoroutine(OpenInterfaceScreen(3));
             Debug.Log("Hit water");
-            MeshCollider[] colliders = FindObjectsOfType<MeshCollider>();
-            int len = colliders.Length;
-            for (int i = 0; i < len; i++) {
-                if (colliders[i].name.Contains("Water"))
-                {
-                    GameObject.Destroy(colliders[i]);
-                }    
-            }
-            
+            //MeshCollider[] colliders = FindObjectsOfType<MeshCollider>();
+            //int len = colliders.Length;
+            //for (int i = 0; i < len; i++) {
+            //    if (colliders[i].name.Contains("Water"))
+            //    {
+            //        GameObject.Destroy(colliders[i]);
+            //    }    
+            //}
+            Destroy(collision.gameObject.GetComponent<MeshCollider>());
+            NowSphere.GetComponent<MeshRenderer>().material = WaterSphere.GetComponent<MeshRenderer>().material;
+            StartCoroutine(OpenInterfaceScreen(3));
+
+
         }
     }
     IEnumerator DestroyFirstPrep(float time)
