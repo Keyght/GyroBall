@@ -74,6 +74,13 @@ public class OpenAnotherUI : MonoBehaviour
 
     public void OnMouseDown()
     {
+        if (gameObject.name == "back_button") {
+            HeaderNow.SetActive(true);
+            FunctionsNow.SetActive(true);
+
+            HeaderNext.SetActive(false);
+            FunctionsNext.SetActive(false);
+        }
         if (gameObject.name=="ButtonGround")
         {
                 Debug.Log("Klicked ground");
