@@ -15,10 +15,17 @@ public class ForFireLoc : MonoBehaviour
     public GameObject Fire3;
     public GameObject Fire4;
 
+    public GameObject Fire5_1;
+    public GameObject Fire5_2;
+    public GameObject Fire5_3;
+    public GameObject Fire5_4;
+
     public GameObject Prep1;
     public GameObject Prep2;
     public GameObject Prep3;
     public GameObject Prep4;
+
+    public GameObject Prep_seno;
 
     public void OnCollisionEnter(Collision collision)
     {
@@ -45,6 +52,12 @@ public class ForFireLoc : MonoBehaviour
             Fire4.SetActive(true);
             StartCoroutine(DestroyFourthdPrep(3));
             Debug.Log("Paper");
+        }
+        else if (collision.gameObject.name.Contains("stock"))
+        {
+            Fire5_1.SetActive(true);
+            StartCoroutine(RunSecondAndFourthFireSeno(1));
+            Debug.Log("Seno_1");
         }
         if (collision.gameObject.name.Contains("Water"))
         {
@@ -88,6 +101,31 @@ public class ForFireLoc : MonoBehaviour
         yield return new WaitForSeconds(time);
         Destroy(Prep4);
         Destroy(Fire4);
+    }
+    IEnumerator RunSecondAndFourthFireSeno(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Debug.Log("Seno2_4");
+        Fire5_2.SetActive(true);
+        Fire5_3.SetActive(true);
+        StartCoroutine(RunThirdFireSeno(1));
+    }
+    IEnumerator RunThirdFireSeno(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Debug.Log("Seno3");
+        Fire5_4.SetActive(true);
+        StartCoroutine(DestroySenoAndFire(3));
+    }
+    IEnumerator DestroySenoAndFire(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Debug.Log("Destroy seno");
+        Destroy(Prep_seno);
+        Destroy(Fire5_1);
+        Destroy(Fire5_2);
+        Destroy(Fire5_3);
+        Destroy(Fire5_4);
     }
     IEnumerator OpenInterfaceScreen(float time)
     {
