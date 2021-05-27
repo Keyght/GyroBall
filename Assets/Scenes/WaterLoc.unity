@@ -38,13 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -96,7 +96,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8c53bee3c97155b4c8e1273a001a48ba,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -1237,6 +1238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FinishCanvas: {fileID: 1481902209}
   FinishCanvasGood: {fileID: 484627442}
+  SphereForDelete: {fileID: 0}
   NowSphere: {fileID: 1166465157}
   NextSphere: {fileID: 1688216393}
   EmptySphere: {fileID: 0}
@@ -1632,6 +1634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FinishCanvas: {fileID: 1481902209}
   FinishCanvasGood: {fileID: 484627442}
+  SphereForDelete: {fileID: 0}
   NowSphere: {fileID: 1166465157}
   NextSphere: {fileID: 1688216393}
   EmptySphere: {fileID: 0}
