@@ -25,6 +25,7 @@ public class VentWork : MonoBehaviour
         }
         if (collision.gameObject.name == "Vent006")
         {
+            Debug.Log("O6");
             wind_plane4.SetActive(true);
         }
         if (collision.gameObject.name == "Vent008")
