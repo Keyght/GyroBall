@@ -9,6 +9,7 @@ public class EndOfASession : MonoBehaviour
 {
     public GameObject FinishCanvas;
     public GameObject FinishCanvasGood;
+    public GameObject SphereForDelete;
 
     public GameObject NowSphere;
     public GameObject NextSphere;
@@ -97,6 +98,7 @@ public class EndOfASession : MonoBehaviour
             NextSphere.SetActive(true);
             //NowSphere.GetComponent<MeshRenderer>().material = NextSphere.GetComponent<MeshRenderer>().material;
             NowSphere.GetComponent<MeshRenderer>().material = EmptySphere.GetComponent<MeshRenderer>().material;
+            SphereForDelete.GetComponent<MeshRenderer>().material = EmptySphere.GetComponent<MeshRenderer>().material;
             StartCoroutine(OpenInterfaceScreen(3));
         }
     }
