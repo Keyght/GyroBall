@@ -37,7 +37,7 @@ public class EndOfASession : MonoBehaviour
     }
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name.Contains("Floor")) {
+        if ((collision.gameObject.name.Contains("Floor"))|| (collision.gameObject.name.Contains("Water"))) {
             isGameFinished = true;
             FinishCanvas.SetActive(true);
             TimerText = GameObject.Find("TimerText").GetComponent<Text>();

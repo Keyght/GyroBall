@@ -61,7 +61,7 @@ public class ForFireLoc : MonoBehaviour
         }
         if (collision.gameObject.name.Contains("Water"))
         {
-            FinishCanvas.SetActive(true);
+            //FinishCanvas.SetActive(true);
             Debug.Log("Hit water");
             //MeshCollider[] colliders = FindObjectsOfType<MeshCollider>();
             //int len = colliders.Length;
