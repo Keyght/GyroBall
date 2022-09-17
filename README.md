@@ -6,11 +6,16 @@
 ---
 
 # Images
-![](landing/23.JPG)
-![](landing/21.JPG)
-![](landing/1.png)
-![](landing/2.png)
-![](landing/3.png)
+<img src="landing/hub_gyro.jpg" width = 900/>
+<img src="landing/hub2_gyro.jpg" width = 900/>
+<img src="landing/stone.jpg" width = 900/>
+<img src="landing/water_loc.jpg" width = 900/>
+<img src="landing/air.jpg" width = 900/>
+<img src="landing/air.jpg" width = 900/>
+<img src="landing/air2.jpg" width = 900/>
+<img src="landing/gamesession_gyro.jpg" width = 900/>
+<img src="landing/gamesession2_gyro.jpg" width = 900/>
+
 
 ---
 
